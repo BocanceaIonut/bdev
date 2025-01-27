@@ -1,101 +1,147 @@
+"use client";
+import Sidebar from "../components/Sidebar";
 import Image from "next/image";
+import pcc from "../images/pcc.jpg";
+import { useState, useRef, useEffect } from "react";
 
-export default function Home() {
+const sectionStyle =
+  "h-screen w-screen text-white flex flex-col justify-center items-center snap-start bg-white";
+
+export default function BHome() {
+  const [selectedIndex, setSelectedIndex] = useState<number>(0);
+
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScroll = () => {
+    const container = containerRef.current;
+
+    if (container) {
+      const sections = Array.from(container.querySelectorAll("section"));
+      let currentIndex = 0;
+
+      sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom >= 0) {
+          currentIndex = index;
+        }
+      });
+
+      setSelectedIndex(currentIndex);
+    }
+  };
+
+  // Add scroll event listener on component mount
+  useEffect(() => {
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener("scroll", handleScroll);
+    }
+
+    // Cleanup scroll event listener on unmount
+    return () => {
+      if (container) {
+        container.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="flex h-screen">
+      <div
+        ref={containerRef}
+        className="mr-auto overflow-auto snap-y snap-mandatory h-screen hide-scrollbar"
+      >
+        <section id="section0" className={`${sectionStyle}`}>
+          <div className="flex h-full w-full">
+            <div className="bg-white w-1/2 justify-items-center content-center">
+              <h1 className="text-4xl mb-6 main-green-text">
+                <b>HELLO!</b> I AM
+                <b className="text-yellow-400"> GABRIEL!</b>
+              </h1>
+              <h1 className="text-4xl mb-6 main-green-text bg-yellow-400">
+                <b>
+                  <i>SOFTWARE ENGINEER</i>
+                </b>
+              </h1>
+              <p className="mb-4 text-center main-green-text">
+                I have 7 years of software development!
+              </p>
+            </div>
+            <div className="w-1/2 justify-center content-center main-green-background">
+              <Image src={pcc} alt="" className="w-full" />
+            </div>
+          </div>
+        </section>
+        <section id="section1" className={`${sectionStyle}`}>
+          <div>
+            <h1 className="text-4xl mb-6 text-black">About me</h1>
+          </div>
+          <div>
+            <p className="mb-4 text-center text-black">
+              I am Bocancea Gabriel Ionut, software engineer with 7 years of
+              experience
+            </p>
+          </div>
+          <div>
+            <table className="table-auto">
+              <tbody>
+                <tr>
+                  <td className="text-center text-black">
+                    7+ years of experience
+                  </td>
+                  <td className="text-center text-black">sada2</td>
+                </tr>
+                <tr>
+                  <td className="text-center text-black">sada3</td>
+                  <td className="text-center text-black">sada4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section id="section2" className={`${sectionStyle}`}>
+          <h1 className="text-4xl mb-6 text-black">Section 3: Introduction</h1>
+          <p className="mb-4 text-center text-black">
+            Welcome to Section 1. This section serves as an introduction to our
+            topic. Here we discuss the basics and provide some context. The goal
+            is to give you a solid understanding of what we’ll cover in the
+            upcoming sections.
+          </p>
+        </section>
+        <section id="section3" className={`${sectionStyle}`}>
+          <h1 className="text-4xl mb-6 text-black">Section 3: Introduction</h1>
+          <p className="mb-4 text-center text-black">
+            Welcome to Section 3. This section serves as an introduction to our
+            topic. Here we discuss the basics and provide some context. The goal
+            is to give you a solid understanding of what we’ll cover in the
+            upcoming sections.
+          </p>
+        </section>
+        <section id="section4" className={`${sectionStyle}`}>
+          <h1 className="text-4xl mb-6 text-black">Section 4: Introduction</h1>
+          <p className="mb-4 text-center text-black">
+            Welcome to Section 4. This section serves as an introduction to our
+            topic. Here we discuss the basics and provide some context. The goal
+            is to give you a solid understanding of what we’ll cover in the
+            upcoming sections.
+          </p>
+        </section>
+        <section id="section5" className={`${sectionStyle}`}>
+          <h1 className="text-4xl mb-6 text-black">Section 5: Introduction</h1>
+          <p className="mb-4 text-center text-black">
+            Welcome to Section 5. This section serves as an introduction to our
+            topic. Here we discuss the basics and provide some context. The goal
+            is to give you a solid understanding of what we’ll cover in the
+            upcoming sections.
+          </p>
+        </section>
+      </div>
+      <div className="bg-transparent text-white right-0 h-full flex items-center justify-end fixed mr-4">
+        <Sidebar
+          selectedIndex={selectedIndex}
+          setSelectedIndex={setSelectedIndex}
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
