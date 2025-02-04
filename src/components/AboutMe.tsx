@@ -14,10 +14,10 @@ export default function AboutMe() {
                         <div className="pointer-events-none absolute opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-95 bg-yellow-400 text-black p-2 sm:p-4 rounded-lg shadow-lg inset-0 flex flex-col justify-center z-10 text-center">
                             <h3 className="text-black font-bold mb-1 sm:mb-2 text-sm sm:text-base">Experience Details</h3>
                             <p className="text-xs sm:text-sm">
-                                • 1 year as Intern<br />
-                                • 2 years as Junior Software Engineer<br />
+                                • 2+ years as Senior Software Engineer<br />
                                 • 2 years as Mid Software Engineer<br />
-                                • 2+ years as Senior Software Engineer
+                                • 2 years as Junior Software Engineer<br />
+                                • 1 year as Intern<br />
                             </p>
                         </div>
                     </div>
@@ -25,16 +25,16 @@ export default function AboutMe() {
                         <div className="h-full p-2 sm:p-4 md:p-6 flex flex-col items-center justify-center text-center">
                             <div>
                                 <h2 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-white text-yellow-400">Projects</h2>
-                                <p className="text-gray-300">10+</p>
+                                <p className="text-gray-300">9</p>
                             </div>
                         </div>
                         <div className="pointer-events-none absolute opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-95 bg-yellow-400 text-black p-2 sm:p-4 rounded-lg shadow-lg inset-0 flex flex-col justify-center z-10 text-center">
                             <h3 className="text-black font-bold mb-1 sm:mb-2 text-sm sm:text-base">Project Details</h3>
                             <p className="text-xs sm:text-sm">
-                                • 3 Mobile aplications<br />
-                                • 1 API<br />
-                                • 2 Web Applications<br />
-                                • 1 Payment Gateway 
+                                • 5 React, React Native and JavaScript/TypeScript projects<br />
+                                • 3 Elixir projects<br />
+                                • 3 Erlang projects<br />
+                                • 1 ELM project
                             </p>
                         </div>
                     </div>
@@ -48,9 +48,9 @@ export default function AboutMe() {
                         <div className="pointer-events-none absolute opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-95 bg-yellow-400 text-black p-2 sm:p-4 rounded-lg shadow-lg inset-0 flex flex-col justify-center z-10 text-center">
                             <h3 className="text-black font-bold mb-1 sm:mb-2 text-sm sm:text-base">Technology Details</h3>
                             <p className="text-xs sm:text-sm">
-                                • Frontend: React, React Native,Expo, Next.js, TypeScript, TailwindCSS<br />
-                                • Backend: Erlang, Elixir<br />
-                                • Cloud: AWS, Firebase, Docker, Postgres, DinamoDB 
+                                • <b>Frontend:</b> React, React Native, Expo, Next.js, TypeScript, TailwindCSS, Webviews, Websockets<br />
+                                • <b>Backend:</b> Erlang, Elixir<br />
+                                • <b>Others:</b> AWS, Firebase, Docker, Postgres, DinamoDB, Fastlane 
                             </p>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export default function AboutMe() {
                         <div className="h-full p-2 sm:p-4 md:p-6 flex flex-col items-center justify-center text-center">
                             <div>
                                 <h2 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-white text-yellow-400">Clients</h2>
-                                <p className="text-gray-300">4+</p>
+                                <p className="text-gray-300">4</p>
                             </div>
                         </div>
                         <div className="pointer-events-none absolute opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-95 bg-yellow-400 text-black p-2 sm:p-4 rounded-lg shadow-lg inset-0 flex flex-col justify-center z-10 text-center">
@@ -66,7 +66,7 @@ export default function AboutMe() {
                             <p className="text-xs sm:text-sm">
                                 • Fintech<br />
                                 • Food<br />
-                                • Navigation app 
+                                • Navigation app<br />
                             </p>
                         </div>
                     </div>

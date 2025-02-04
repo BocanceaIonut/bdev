@@ -4,16 +4,31 @@ export default function Resume() {
             <h1 className="text-4xl mb-8 text-black font-bold">Resume</h1>
             <div className="grid grid-cols-2 gap-8 w-full">
                 {/* Education Section */}
-                <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-yellow-400">
                     <h2 className="text-2xl font-bold text-yellow-400 mb-4">Education</h2>
                     <div className="ml-4">
                         <h3 className="text-xl font-semibold text-black">Bachelor of Science in Computer Science</h3>
                         <p className="text-black">Technical University of Cluj-Napoca • 2014-2018</p>
                     </div>
+                    <h2 className="text-2xl font-bold text-yellow-400 mb-4 mt-8">Conferences</h2>
+                    <div className="ml-4">
+                        <h3 className="text-xl font-semibold text-black">
+                            <a href="https://www.elixirconf.eu" className="hover:text-yellow-400 transition-colors duration-300 underline">
+                                ElixirConf EU
+                            </a>
+                            <span className="text-base font-normal"> - attended multiple years as participant</span>
+                        </h3>
+                    </div>
+                    <div className="ml-4">
+                        <h3 className="text-xl font-semibold text-black">ElixirConf EU 2019</h3>
+                    </div>
+                    <div className="ml-4">
+                        <h3 className="text-xl font-semibold text-black">ElixirConf EU 2018</h3>
+                    </div>
                 </div>
 
                 {/* Work Experience Section */}
-                <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-yellow-400">
                     <h2 className="text-2xl font-bold text-yellow-400 mb-4">Work Experience</h2>
                     <div className="ml-4">
                         <div className="mb-4">
@@ -47,7 +62,7 @@ export default function Resume() {
                 </div>
 
                 {/* Technical Skills Section */}
-                <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-yellow-400">
                     <h2 className="text-2xl font-bold text-yellow-400 mb-4">Technical Skills</h2>
                     <div className="ml-4 space-y-4">
                         <div>
@@ -66,7 +81,7 @@ export default function Resume() {
                 </div>
 
                 {/* Soft Skills Section */}
-                <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-yellow-400">
                     <h2 className="text-2xl font-bold text-yellow-400 mb-4">Soft Skills</h2>
                     <div className="ml-4 grid grid-cols-2 gap-4">
                         <div>
@@ -78,10 +93,11 @@ export default function Resume() {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold mb-2 text-black">Communication</h3>
+                            <h3 className="text-lg font-semibold mb-2 text-black">Languages</h3>
                             <ul className="list-disc list-inside text-black">
-                                <li>Technical Writing</li>
-                                <li>Collaboration</li>
+                                <li>Romanian(native)</li>
+                                <li>English(fluent)</li>
+                                <li>German(A2.1) and learning</li>
                             </ul>
                         </div>
                     </div>

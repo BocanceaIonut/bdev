@@ -17,7 +17,7 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105"
+                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
                         <h2 className="text-2xl font-bold text-yellow-400 mb-2">Decision Chat</h2>
                         <p className="text-gray-600">Slack like app</p>
@@ -33,10 +33,10 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105"
+                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
                         <h2 className="text-2xl font-bold text-yellow-400 mb-2">Crafting Software Website</h2>
-                        <p className="text-gray-600">Phoenix Framework</p>
+                        <p className="text-gray-600">Presentation website for a software company</p>
                     </div>
 
                     {/* Project 3 */}
@@ -49,10 +49,10 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105"
+                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-2xl font-bold text-yellow-400 mb-2">B4 Project</h2>
-                        <p className="text-gray-600">Vanilla JavaScript</p>
+                        <h2 className="text-2xl font-bold text-yellow-400 mb-2">TurkUI</h2>
+                        <p className="text-gray-600">Word selection tool</p>
                     </div>
 
                     {/* Project 4 */}
@@ -65,7 +65,7 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105"
+                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
                         <h2 className="text-2xl font-bold text-yellow-400 mb-2">Localvore</h2>
                         <p className="text-gray-600">React Native</p>
@@ -81,7 +81,7 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105"
+                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
                         <h2 className="text-2xl font-bold text-yellow-400 mb-2">Klarna</h2>
                         <p className="text-gray-600">Payment Gateway</p>
@@ -97,7 +97,7 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105"
+                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
                         <h2 className="text-2xl font-bold text-yellow-400 mb-2">Ecomotive</h2>
                         <p className="text-gray-600">React Native</p>
@@ -136,7 +136,7 @@ export default function Portofolio() {
                                     <h2 className="text-4xl font-bold text-yellow-400">
                                         {showDialog === 1 && "Decision Chat"}
                                         {showDialog === 2 && "Crafting Software Website"}
-                                        {showDialog === 3 && "B4 Project"}
+                                        {showDialog === 3 && "TurkUI"}
                                         {showDialog === 4 && "Localvore"}
                                         {showDialog === 5 && "Klarna"}
                                         {showDialog === 6 && "Ecomotive"}
@@ -157,24 +157,99 @@ export default function Portofolio() {
                                     </button>
                                 </div>
                                 <div className="text-gray-600">
-                                    <p className="text-xl leading-relaxed mb-6">
-                                        {showDialog === 1 && "Developed a Slack like web aplication used for team communication, task management and decision making."}
-                                        {showDialog === 2 && "Phoenix Framework"}
-                                        {showDialog === 3 && "Built a cross-platform mobile application using React Native. Integrated with RESTful APIs and implemented offline-first functionality. The app has over 100,000 downloads with a 4.5-star rating."}
-                                        {showDialog === 4 && "Integrated machine learning models for predictive analytics. Used TensorFlow and scikit-learn for data processing and model training. Improved business decision accuracy by 35% through AI-driven insights."}
-                                        {showDialog === 5 && "Designed and implemented CI/CD pipelines using Jenkins and GitLab CI. Automated testing, building, and deployment processes. Reduced deployment time from hours to minutes and eliminated manual deployment errors."}
-                                        {showDialog === 6 && "Architected a microservices-based API gateway using Node.js and Express. Implemented service discovery, load balancing, and caching. The system handles millions of requests per day with sub-second response times."}
-                                    </p>
+                                    {showDialog === 1 && (
+                                        <p className="text-xl leading-relaxed mb-6">
+                                            Developed a Slack like web aplication used for team communication, task management and decision making.
+                                        </p>
+                                    )}
+                                    {showDialog === 2 && (
+                                        <p className="text-xl leading-relaxed mb-6">
+                                            Presentation website for a software company.
+                                        </p>
+                                    )}
+                                    {showDialog === 3 && (
+                                        <p className="text-xl leading-relaxed mb-6">
+                                            Web aplication that allows users to select words from a sentence, add the intent, entities and porperies of the selection.
+                                        </p>
+                                    )}
+                                    {showDialog === 4 && (
+                                        <p className="text-xl leading-relaxed mb-6">
+                                            Mobile application that consumes a RESTful API writen in Elixir and allows users to search for local restaurants.
+                                        </p>
+                                    )}
+                                    {showDialog === 5 && (
+                                        <div className="text-xl leading-relaxed mb-6">
+                                            <p>Worked on multiple projects:</p>
+                                            <ul className="list-disc list-inside mt-2">
+                                                <li>Mobile application for updates, news and posts</li>
+                                                <li>Payment gateway service</li>
+                                                <li>Alternative payment gateway service for Swedish, Dutch, and German markets</li>
+                                            </ul>
+                                        </div>
+                                    )}
+                                    {showDialog === 6 && (
+                                        <p className="text-xl leading-relaxed mb-6">
+                                            Mobile application .
+                                        </p>
+                                    )}
                                     <div className="mt-8">
                                         <h3 className="text-2xl font-bold text-yellow-400 mb-4">Technologies Used</h3>
                                         <ul className="list-disc list-inside text-lg space-y-2">
                                             {showDialog === 1 && <>
-                                                <li>Elm, Elixir, Websockets</li>
+                                                <li>Elm, Elixir, Websockets, PostgreSQL, AWS</li>
                                             </>}
                                             {showDialog === 2 && <>
-                                                <li>Phoenix Framework</li>
+                                                <li>Phoenix Framework, Elixir</li>
                                             </>}
-                                            {/* Add similar lists for other projects */}
+                                            {showDialog === 3 && <>
+                                                <li>Vanilla JavaScript</li>
+                                            </>}
+                                            {showDialog === 4 && <>
+                                                <li>React Native, Redux, Elixir, Expo, Fastlane, Docker</li>
+                                            </>}
+                                            {showDialog === 5 && <>
+                                                <li>React Native, Redux, React, WebView, Erlang, DynamoDB, AWS, C2C, Docker, CI/CD, Jenkins, Chaossearch, Splunk, Datadog</li>
+                                            </>}
+                                            {showDialog === 6 && <>
+                                                <li>React-Native, Redux, Redux Toolkit, RTK Query, Expo, Webviews, d3.js</li>
+                                            </>}
+                                        </ul>
+                                    </div>
+                                    <div className="mt-8">
+                                        <h3 className="text-2xl font-bold text-yellow-400 mb-4">Main Achievements</h3>
+                                        <ul className="list-disc list-inside text-lg space-y-2">
+                                            {showDialog === 1 && <>
+                                                <li>Implementing real-time communication with WebSockets</li>
+                                                <li>Managing state across multiple users and channels</li>
+                                                <li>Building a responsive UI with Elm architecture</li>
+                                            </>}
+                                            {showDialog === 2 && <>
+                                                <li>Use Phoenix Framework to build a responsive website.</li>
+                                                <li>Use Ajax to update the UI.</li>
+                                            </>}
+                                            {showDialog === 3 && <>
+                                                <li>Handling complex Vanilla JavaScript code</li>
+                                                <li>Working with anchor nodes, focus nodes and mouse events</li>
+                                            </>}
+                                            {showDialog === 4 && <>
+                                                <li>Team lead position being responsible of client communication, project management and team management.</li>
+                                                <li>Using Animations API I managed to create custom component animations. Ex: Search text input that fades in on search icon press, preview screen slide in on map pin press
+                                                with elixir on backend to create the API consumed by the mobile react-native app.</li>
+                                                <li>Used Redux Store to manage the state of the application.</li>
+                                                <li>Used Expo to build the mobile application.</li>
+                                                <li>Used Fastlane to automate the deployment of the mobile application.</li>
+                                                <li>Used Docker to containerize the mobile application.</li>
+                                            </>}
+                                            {showDialog === 5 && <>
+                                                <li>For the mobile application an advanced text editor was needed. To be able to implement the complex text editor we used the WebView component and Vanilla JavaScript.</li>
+                                                <li>Used Chaossearch, Splunk and Datadog to monitor the performance of the application and to find the root cause of the issues.</li>
+                                                <li>Used Jenkins to automate the deployment of the services.</li>
+                                            </>}
+                                            {showDialog === 6 && <>
+                                                <li>Creating multiple hand made component. Being not satisfied with the level of customisation of NPM packages I took matters in my own hands and built from scratch different components, from DatePicker to Charts inside a Webview using D3.js. For the Chart component the main achievement was performance, getting from a chart rendered with SVGs that supported a small amount of data, otherwise it will move slow or crash our app, to a chart that renders big amounts of data, is responsive, works smooth and has a 100% level of customisation. Got out of my comfort zone and, when needed, jumped in figma, and using a template I created an Android icon that was urgently needed for the app release.</li>
+                                                <li>Used RTK Query to fetch data from the API and manage the state of the application.</li>
+                                                <li>Used Webviews to render the React Native components inside the mobile application.</li>
+                                            </>}
                                         </ul>
                                     </div>
                                 </div>

@@ -3,7 +3,7 @@ export default function ContactMe() {
         <div className="w-screen pr-32 pl-8">
             <div className="flex flex-col justify-center items-center w-full h-full">
               <h1 className="text-4xl mb-8 text-black font-bold">Contact Me</h1>
-              <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
+              <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl border-2 border-yellow-400">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="bg-yellow-400 p-4 rounded-full">
@@ -13,7 +13,8 @@ export default function ContactMe() {
                     </div>
                     <div>
                       <h2 className="text-2xl font-bold text-black">Phone</h2>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
+                      <p className="text-gray-600">DE: +49 01512 4197309</p>
+                      <p className="text-gray-600">RO: +40 753 472 477</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -24,7 +25,7 @@ export default function ContactMe() {
                     </div>
                     <div>
                       <h2 className="text-2xl font-bold text-black">Email</h2>
-                      <p className="text-gray-600">gabriel.bocancea@example.com</p>
+                      <p className="text-gray-600">bocancea.ionut.1@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -35,7 +36,7 @@ export default function ContactMe() {
                     </div>
                     <div>
                       <h2 className="text-2xl font-bold text-black">LinkedIn</h2>
-                      <a href="https://linkedin.com/in/gabriel-bocancea" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">linkedin.com/in/gabriel-bocancea</a>
+                      <a href="https://www.linkedin.com/in/ionut-gabriel-bocancea-8a06a11a3/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">linkedin.com/in/ionut-gabriel-bocancea</a>
                     </div>
                   </div>
                 </div>

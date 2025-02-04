@@ -66,10 +66,10 @@ export default function BHome() {
         <section id="section3" className={`${sectionStyle}`}>
          <Portofolio />
         </section>
-        <section id="section4" className={`${sectionStyle}`}>
+        {/* <section id="section4" className={`${sectionStyle}`}>
           <Testimonials />
-        </section>
-        <section id="section5" className={`${sectionStyle}`}>
+        </section> */}
+        <section id="section4" className={`${sectionStyle}`}>
           <ContactMe />
         </section>
       </div>
