@@ -60,7 +60,15 @@ export default function BHome() {
   }, []);
 
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col h-screen">
+      {isMobile && (
+        <div className="w-full flex justify-center py-2 bg-white absolute">
+          <Sidebar
+            selectedIndex={selectedIndex}
+            setSelectedIndex={setSelectedIndex}
+          />
+        </div>
+      )}
       <div
         ref={containerRef}
         className="w-full overflow-auto snap-y snap-mandatory h-screen hide-scrollbar"
@@ -84,13 +92,14 @@ export default function BHome() {
           <ContactMe />
         </section>
       </div>
-      {!isMobile ? <div className="bg-transparent text-white right-0 h-full flex items-center justify-end fixed mr-4">
-        <Sidebar
-          selectedIndex={selectedIndex}
-          setSelectedIndex={setSelectedIndex}
-        />
-      </div> : <></>}
+      {!isMobile && (
+        <div className="bg-transparent text-white right-0 h-full flex items-center justify-end fixed mr-4">
+          <Sidebar
+            selectedIndex={selectedIndex}
+            setSelectedIndex={setSelectedIndex}
+          />
+        </div>
+      )}
     </div>
   );
 }
-

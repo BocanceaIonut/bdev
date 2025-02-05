@@ -15,7 +15,7 @@ export default function Home() {
           </b>
         </h1>
       </div>
-      <div className="w-full md:w-1/2 justify-center content-center main-green-background p-4 md:p-0">
+      <div className="w-full md:w-1/2 md:h-screen justify-center content-center main-green-background p-4 md:p-0">
         <Image 
           src={pcc} 
           alt="Profile picture"

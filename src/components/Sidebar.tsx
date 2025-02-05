@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 const linkStyles =
-  "hover:text-white my-3 transform hover:scale-125 transition duration-300";
+  "hover:text-white my-3 md:my-3 transform hover:scale-125 transition duration-300";
 const selectedStyles = "text-white scale-125";
 const deselectedStyles = "main-green-text";
 
@@ -31,8 +31,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="bg-yellow-400 w-16  rounded-xl shadow-xl flex flex-col justify-evenly items-center py-5">
+    <div className="flex justify-center items-center h-full md:h-screen">
+      <div className="bg-yellow-400 h-16 md:h-auto w-screen md:w-16 rounded-none md:rounded-xl md:shadow-xl flex flex-row md:flex-col justify-evenly items-center py-5">
         {/* Home */}
         <a
           className={`${selectedIndex === 0 ? selectedStyles : deselectedStyles} ${linkStyles}`}
