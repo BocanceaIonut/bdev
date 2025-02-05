@@ -131,16 +131,15 @@ export default function Resume() {
                 {/* Full Resume Dialog */}
                 {showFullResume && (
                     <div 
-                        className="fixed inset-0 bg-black bg-opacity-50 z-50 transition-transform duration-300 ease-in-out"
+                        className="fixed inset-0 bg-black bg-opacity-50 z-[100] transition-transform duration-300 ease-in-out overflow-y-auto"
                         style={{
                             transformOrigin: 'var(--zoom-origin-x) var(--zoom-origin-y)',
                             animation: 'zoomIn 0.3s ease-in-out'
                         }}
                     >
-                        <div className="h-screen flex flex-col">
-                            {/* Fixed Header */}
-                            <div className="bg-white p-4 border-b border-gray-200">
-                                <div className="flex justify-between items-center">
+                        <div className="min-h-screen">
+                            <div className="bg-white p-4">
+                                <div className="flex justify-between items-center mb-4 sticky top-0 bg-white z-10 py-2">
                                     <h2 className="text-xl font-bold text-yellow-400">Full Resume</h2>
                                     <button 
                                         className="text-black text-xl"
@@ -155,10 +154,6 @@ export default function Resume() {
                                         ×
                                     </button>
                                 </div>
-                            </div>
-                            
-                            {/* Scrollable Content */}
-                            <div className="flex-1 overflow-y-auto bg-white p-4">
                                 <ResumeContent />
                             </div>
                         </div>

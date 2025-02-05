@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function Portofolio() {
     const [showDialog, setShowDialog] = useState<number | null>(null);
     return (
-        <div className="w-screen px-4 md:pr-32 md:pl-8">
+        <div className="w-screen px-2 sm:px-4 md:pr-32 md:pl-8">
             <div className="flex flex-col justify-center items-center w-full h-full">
-                <h1 className="text-3xl md:text-4xl mb-6 md:mb-8 text-black font-bold">Portofolio</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 md:mb-8 text-black font-bold">Portofolio</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-8 w-full">
                     {/* Project 1 */}
                     <div
                         onClick={(e) => {
@@ -17,10 +17,10 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Decision Chat</h2>
-                        <p className="text-gray-600">Slack like app</p>
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400">Decision Chat</h2>
+                        <p className="text-gray-600 hidden md:block">Slack like app</p>
                     </div>
 
                     {/* Project 2 */}
@@ -33,10 +33,10 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Crafting Software Website</h2>
-                        <p className="text-gray-600">Presentation website for a software company</p>
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400">Crafting Software Website</h2>
+                        <p className="text-gray-600 hidden md:block">Presentation website for a software company</p>
                     </div>
 
                     {/* Project 3 */}
@@ -49,10 +49,10 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">TurkUI</h2>
-                        <p className="text-gray-600">Word selection tool</p>
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400">TurkUI</h2>
+                        <p className="text-gray-600 hidden md:block">Word selection tool</p>
                     </div>
 
                     {/* Project 4 */}
@@ -65,10 +65,10 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Localvore</h2>
-                        <p className="text-gray-600">React Native</p>
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400">Localvore</h2>
+                        <p className="text-gray-600 hidden md:block">React Native</p>
                     </div>
 
                     {/* Project 5 */}
@@ -81,10 +81,10 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Klarna</h2>
-                        <p className="text-gray-600">Payment Gateway</p>
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400">Klarna</h2>
+                        <p className="text-gray-600 hidden md:block">Payment Gateway</p>
                     </div>
 
                     {/* Project 6 */}
@@ -97,10 +97,10 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Ecomotive</h2>
-                        <p className="text-gray-600">React Native</p>
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400">Ecomotive</h2>
+                        <p className="text-gray-600 hidden md:block">React Native</p>
                     </div>
                 </div>
 
@@ -108,13 +108,13 @@ export default function Portofolio() {
                 {showDialog && (
                     <>
                         <div
-                            className="fixed inset-0 bg-black bg-opacity-50"
+                            className="fixed inset-0 bg-black bg-opacity-50 z-[200]"
                             style={{
                                 animation: 'fadeIn 0.3s ease-out forwards'
                             }}
                         />
                         <div
-                            className="fixed inset-0 flex justify-center items-center z-50 p-4"
+                            className="fixed inset-0 flex justify-center items-center z-[201] p-4"
                             onClick={(e) => {
                                 if (e.target === e.currentTarget) {
                                     const overlay = document.querySelector('.bg-black.bg-opacity-50') as HTMLElement;
