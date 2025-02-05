@@ -5,7 +5,6 @@ import AboutMe from "../components/AboutMe";
 import Home from "../components/Home";
 import Resume from "../components/Resume";
 import Portofolio from "../components/Portofolio";
-import Testimonials from "../components/Testimonials";
 import ContactMe from "../components/ContactMe";
 const sectionStyle =
   "h-screen w-screen text-white flex flex-col justify-center items-center snap-start bg-white";
@@ -64,7 +63,7 @@ export default function BHome() {
           <Resume />
         </section>
         <section id="section3" className={`${sectionStyle}`}>
-         <Portofolio />
+          <Portofolio />
         </section>
         {/* <section id="section4" className={`${sectionStyle}`}>
           <Testimonials />

@@ -4,7 +4,7 @@ export default function BarChart() {
     return (
         <div id="barChart" className="w-3/5 h-3/5 bg-white p-4 rounded shadow-lg">
             <svg
-                ref={(node: any) => {
+                ref={(node: SVGSVGElement) => {
                     if (node) {
                         const data: number[] = [30, 45, 60, 35]; // Reduced to 4 values
                         const labels = ['Python', 'JavaScript', 'TypeScript', 'Java']; // Labels for bars
@@ -52,7 +52,7 @@ export default function BarChart() {
                             .selectAll("rect")
                             .data(data)
                             .join("rect")
-                            .attr("x", (_: any, i: number) => xScale(i.toString()) || 0)
+                            .attr("x", (_: unknown, i: number) => xScale(i.toString()) || 0)
                             .attr("y", (d: number) => yScale(d) + (chartHeight - yScale(d)) * 0.2)
                             .attr("width", xScale.bandwidth())
                             .attr("height", (d: number) => (chartHeight - yScale(d)) * 0.8)
@@ -88,8 +88,8 @@ export default function BarChart() {
                             .selectAll("text")
                             .data(labels)
                             .join("text")
-                            .text((d: any) => d)
-                            .attr("x", (_: any, i: { toString: () => any; }) => (xScale(i.toString()) || 0) + xScale.bandwidth() / 2)
+                            .text((d: string) => d)
+                            .attr("x", (_: unknown, i: number) => (xScale(i.toString()) || 0) + xScale.bandwidth() / 2)
                             .attr("y", chartHeight + 20)
                             .attr("text-anchor", "middle")
                             .attr("fill", "black")
@@ -110,7 +110,7 @@ export default function BarChart() {
 
                             // Update bars
                             bars
-                                .attr("x", (_: any, i: number) => xScale(i.toString()) || 0)
+                                .attr("x", (_: unknown, i: number) => xScale(i.toString()) || 0)
                                 .attr("y", (d: number) => yScale(d) + (newHeight - margin.top - margin.bottom - yScale(d)) * 0.2)
                                 .attr("width", xScale.bandwidth())
                                 .attr("height", (d: number) => (newHeight - margin.top - margin.bottom - yScale(d)) * 0.8);

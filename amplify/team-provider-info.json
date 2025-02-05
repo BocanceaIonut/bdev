@@ -10,6 +10,14 @@
       "StackName": "amplify-bdev-dev-94e19",
       "StackId": "arn:aws:cloudformation:eu-central-1:600627322918:stack/amplify-bdev-dev-94e19/e8009ad0-e34f-11ef-8c44-0a906938ac5f",
       "AmplifyAppId": "dedr3apy81jr8"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dedr3apy81jr8",
+          "type": "manual"
+        }
+      }
     }
   }
 }

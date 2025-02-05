@@ -16,7 +16,7 @@ export default function Testimonials() {
               {/* First set of testimonials */}
               <div className="flex-shrink-0 w-1/3 px-4 py-2"> {/* Added vertical padding */}
                 <div className="bg-white p-6 rounded-lg h-48 transition-transform duration-300 hover:scale-105 flex flex-col justify-center items-center text-center shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-                  <p className="text-gray-600 italic">"Gabriel is an exceptional developer who consistently delivers high-quality solutions. His technical expertise and problem-solving abilities are outstanding."</p>
+                  <p className="text-gray-600 italic">&quot;Gabriel is an exceptional developer who consistently delivers high-quality solutions. His technical expertise and problem-solving abilities are outstanding.&quot;</p>
                   <div className="mt-4">
                     <div className="font-bold text-black">John Smith</div>
                     <div className="text-yellow-400">Tech Lead, ABC Corp</div>
@@ -25,7 +25,7 @@ export default function Testimonials() {
               </div>
               <div className="flex-shrink-0 w-1/3 px-4 py-2">
                 <div className="bg-white p-6 rounded-lg h-48 transition-transform duration-300 hover:scale-105 flex flex-col justify-center items-center text-center shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-                  <p className="text-gray-600 italic">"Working with Gabriel was a pleasure. His attention to detail and commitment to excellence made our project a huge success."</p>
+                  <p className="text-gray-600 italic">&quot;Working with Gabriel was a pleasure. His attention to detail and commitment to excellence made our project a huge success.&quot;</p>
                   <div className="mt-4">
                     <div className="font-bold text-black">Sarah Johnson</div>
                     <div className="text-yellow-400">Project Manager, XYZ Inc</div>
@@ -34,7 +34,7 @@ export default function Testimonials() {
               </div>
               <div className="flex-shrink-0 w-1/3 px-4 py-2">
                 <div className="bg-white p-6 rounded-lg h-48 transition-transform duration-300 hover:scale-105 flex flex-col justify-center items-center text-center shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-                  <p className="text-gray-600 italic">"Gabriel's innovative approach to problem-solving and deep technical knowledge made him an invaluable asset to our team."</p>
+                  <p className="text-gray-600 italic">&quot;Gabriel&apos;s innovative approach to problem-solving and deep technical knowledge made him an invaluable asset to our team.&quot;</p>
                   <div className="mt-4">
                     <div className="font-bold text-black">Michael Brown</div>
                     <div className="text-yellow-400">CTO, Tech Innovators</div>
@@ -45,7 +45,7 @@ export default function Testimonials() {
               {/* Duplicate set for infinite scroll */}
               <div className="flex-shrink-0 w-1/3 px-4 py-2">
                 <div className="bg-white p-6 rounded-lg h-48 transition-transform duration-300 hover:scale-105 flex flex-col justify-center items-center text-center shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-                  <p className="text-gray-600 italic">"Gabriel is an exceptional developer who consistently delivers high-quality solutions. His technical expertise and problem-solving abilities are outstanding."</p>
+                  <p className="text-gray-600 italic">&quot;Gabriel is an exceptional developer who consistently delivers high-quality solutions. His technical expertise and problem-solving abilities are outstanding.&quot;</p>
                   <div className="mt-4">
                     <div className="font-bold text-black">John Smith</div>
                     <div className="text-yellow-400">Tech Lead, ABC Corp</div>
@@ -54,7 +54,7 @@ export default function Testimonials() {
               </div>
               <div className="flex-shrink-0 w-1/3 px-4 py-2">
                 <div className="bg-white p-6 rounded-lg h-48 transition-transform duration-300 hover:scale-105 flex flex-col justify-center items-center text-center shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-                  <p className="text-gray-600 italic">"Working with Gabriel was a pleasure. His attention to detail and commitment to excellence made our project a huge success."</p>
+                  <p className="text-gray-600 italic">&quot;Working with Gabriel was a pleasure. His attention to detail and commitment to excellence made our project a huge success.&quot;</p>
                   <div className="mt-4">
                     <div className="font-bold text-black">Sarah Johnson</div>
                     <div className="text-yellow-400">Project Manager, XYZ Inc</div>
@@ -63,7 +63,7 @@ export default function Testimonials() {
               </div>
               <div className="flex-shrink-0 w-1/3 px-4 py-2">
                 <div className="bg-white p-6 rounded-lg h-48 transition-transform duration-300 hover:scale-105 flex flex-col justify-center items-center text-center shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-                  <p className="text-gray-600 italic">"Gabriel's innovative approach to problem-solving and deep technical knowledge made him an invaluable asset to our team."</p>
+                  <p className="text-gray-600 italic">&quot;Gabriel&apos;s innovative approach to problem-solving and deep technical knowledge made him an invaluable asset to our team.&quot;</p>
                   <div className="mt-4">
                     <div className="font-bold text-black">Michael Brown</div>
                     <div className="text-yellow-400">CTO, Tech Innovators</div>

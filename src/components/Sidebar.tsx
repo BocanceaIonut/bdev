@@ -4,7 +4,6 @@ import {
   UserIcon,
   BriefcaseIcon,
   ComputerDesktopIcon,
-  MegaphoneIcon,
   PaperAirplaneIcon,
 } from "@heroicons/react/24/solid";
 
