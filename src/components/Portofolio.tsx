@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function Portofolio() {
     const [showDialog, setShowDialog] = useState<number | null>(null);
     return (
-        <div className="w-screen pr-32 pl-8">
+        <div className="w-screen px-4 md:pr-32 md:pl-8">
             <div className="flex flex-col justify-center items-center w-full h-full">
-                <h1 className="text-4xl mb-8 text-black font-bold">Portofolio</h1>
-                <div className="grid grid-cols-2 gap-8 w-full">
+                <h1 className="text-3xl md:text-4xl mb-6 md:mb-8 text-black font-bold">Portofolio</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full">
                     {/* Project 1 */}
                     <div
                         onClick={(e) => {
@@ -17,9 +17,9 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-2xl font-bold text-yellow-400 mb-2">Decision Chat</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Decision Chat</h2>
                         <p className="text-gray-600">Slack like app</p>
                     </div>
 
@@ -33,9 +33,9 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-2xl font-bold text-yellow-400 mb-2">Crafting Software Website</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Crafting Software Website</h2>
                         <p className="text-gray-600">Presentation website for a software company</p>
                     </div>
 
@@ -49,9 +49,9 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-2xl font-bold text-yellow-400 mb-2">TurkUI</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">TurkUI</h2>
                         <p className="text-gray-600">Word selection tool</p>
                     </div>
 
@@ -65,9 +65,9 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-2xl font-bold text-yellow-400 mb-2">Localvore</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Localvore</h2>
                         <p className="text-gray-600">React Native</p>
                     </div>
 
@@ -81,9 +81,9 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-2xl font-bold text-yellow-400 mb-2">Klarna</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Klarna</h2>
                         <p className="text-gray-600">Payment Gateway</p>
                     </div>
 
@@ -97,9 +97,9 @@ export default function Portofolio() {
                             document.documentElement.style.setProperty('--zoom-origin-x', `${x}px`);
                             document.documentElement.style.setProperty('--zoom-origin-y', `${y}px`);
                         }}
-                        className="bg-white p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
+                        className="bg-white p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
-                        <h2 className="text-2xl font-bold text-yellow-400 mb-2">Ecomotive</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Ecomotive</h2>
                         <p className="text-gray-600">React Native</p>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ export default function Portofolio() {
                             }}
                         />
                         <div
-                            className="fixed inset-0 flex justify-center items-center z-50"
+                            className="fixed inset-0 flex justify-center items-center z-50 p-4"
                             onClick={(e) => {
                                 if (e.target === e.currentTarget) {
                                     const overlay = document.querySelector('.bg-black.bg-opacity-50') as HTMLElement;
@@ -127,13 +127,13 @@ export default function Portofolio() {
                                 }
                             }}
                         >
-                            <div className="bg-white p-12 rounded-lg w-3/4 h-3/4 m-4 overflow-auto"
+                            <div className="bg-white p-6 md:p-12 rounded-lg w-full md:w-3/4 h-[90vh] md:h-3/4 overflow-auto"
                                 style={{
                                     transformOrigin: `var(--zoom-origin-x) var(--zoom-origin-y)`,
                                     animation: 'zoomIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards'
                                 }}>
-                                <div className="flex justify-between items-center mb-6">
-                                    <h2 className="text-4xl font-bold text-yellow-400">
+                                <div className="flex justify-between items-center mb-4 md:mb-6">
+                                    <h2 className="text-2xl md:text-4xl font-bold text-yellow-400">
                                         {showDialog === 1 && "Decision Chat"}
                                         {showDialog === 2 && "Crafting Software Website"}
                                         {showDialog === 3 && "TurkUI"}
@@ -151,34 +151,34 @@ export default function Portofolio() {
                                             }
                                             setTimeout(() => setShowDialog(null), 300);
                                         }}
-                                        className="text-gray-500 hover:text-gray-700 text-3xl"
+                                        className="text-gray-500 hover:text-gray-700 text-2xl md:text-3xl"
                                     >
                                         ✕
                                     </button>
                                 </div>
                                 <div className="text-gray-600">
                                     {showDialog === 1 && (
-                                        <p className="text-xl leading-relaxed mb-6">
+                                        <p className="text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                                             Developed a Slack like web aplication used for team communication, task management and decision making.
                                         </p>
                                     )}
                                     {showDialog === 2 && (
-                                        <p className="text-xl leading-relaxed mb-6">
+                                        <p className="text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                                             Presentation website for a software company.
                                         </p>
                                     )}
                                     {showDialog === 3 && (
-                                        <p className="text-xl leading-relaxed mb-6">
+                                        <p className="text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                                             Web aplication that allows users to select words from a sentence, add the intent, entities and porperies of the selection.
                                         </p>
                                     )}
                                     {showDialog === 4 && (
-                                        <p className="text-xl leading-relaxed mb-6">
+                                        <p className="text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                                             Mobile application that consumes a RESTful API writen in Elixir and allows users to search for local restaurants.
                                         </p>
                                     )}
                                     {showDialog === 5 && (
-                                        <div className="text-xl leading-relaxed mb-6">
+                                        <div className="text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                                             <p>Worked on multiple projects:</p>
                                             <ul className="list-disc list-inside mt-2">
                                                 <li>Mobile application for updates, news and posts</li>
@@ -188,13 +188,13 @@ export default function Portofolio() {
                                         </div>
                                     )}
                                     {showDialog === 6 && (
-                                        <p className="text-xl leading-relaxed mb-6">
+                                        <p className="text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                                             Mobile application .
                                         </p>
                                     )}
-                                    <div className="mt-8">
-                                        <h3 className="text-2xl font-bold text-yellow-400 mb-4">Technologies Used</h3>
-                                        <ul className="list-disc list-inside text-lg space-y-2">
+                                    <div className="mt-6 md:mt-8">
+                                        <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-3 md:mb-4">Technologies Used</h3>
+                                        <ul className="list-disc list-inside text-base md:text-lg space-y-2">
                                             {showDialog === 1 && <>
                                                 <li>Elm, Elixir, Websockets, PostgreSQL, AWS</li>
                                             </>}
@@ -215,9 +215,9 @@ export default function Portofolio() {
                                             </>}
                                         </ul>
                                     </div>
-                                    <div className="mt-8">
-                                        <h3 className="text-2xl font-bold text-yellow-400 mb-4">Main Achievements</h3>
-                                        <ul className="list-disc list-inside text-lg space-y-2">
+                                    <div className="mt-6 md:mt-8">
+                                        <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-3 md:mb-4">Main Achievements</h3>
+                                        <ul className="list-disc list-inside text-base md:text-lg space-y-2">
                                             {showDialog === 1 && <>
                                                 <li>Implementing real-time communication with WebSockets</li>
                                                 <li>Managing state across multiple users and channels</li>

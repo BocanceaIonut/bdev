@@ -7,12 +7,24 @@ import Resume from "../components/Resume";
 import Portofolio from "../components/Portofolio";
 import ContactMe from "../components/ContactMe";
 const sectionStyle =
-  "h-screen w-screen text-white flex flex-col justify-center items-center snap-start bg-white";
+  "min-h-screen w-screen text-white flex flex-col justify-center items-center snap-start bg-white";
 
 export default function BHome() {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const handleScroll = () => {
     const container = containerRef.current;
@@ -51,7 +63,7 @@ export default function BHome() {
     <div className="flex h-screen">
       <div
         ref={containerRef}
-        className="mr-auto overflow-auto snap-y snap-mandatory h-screen hide-scrollbar"
+        className="w-full overflow-auto snap-y snap-mandatory h-screen hide-scrollbar"
       >
         <section id="section0" className={`${sectionStyle}`}>
           <Home />
@@ -72,12 +84,13 @@ export default function BHome() {
           <ContactMe />
         </section>
       </div>
-      <div className="bg-transparent text-white right-0 h-full flex items-center justify-end fixed mr-4">
+      {!isMobile ? <div className="bg-transparent text-white right-0 h-full flex items-center justify-end fixed mr-4">
         <Sidebar
           selectedIndex={selectedIndex}
           setSelectedIndex={setSelectedIndex}
         />
-      </div>
+      </div> : <></>}
     </div>
   );
 }
+
