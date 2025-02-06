@@ -68,7 +68,7 @@ export default function Portofolio() {
                         className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
                         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400">Localvore</h2>
-                        <p className="text-gray-600 hidden md:block">React Native</p>
+                        <p className="text-gray-600 hidden md:block">Restaurants and offers mobile app</p>
                     </div>
 
                     {/* Project 5 */}
@@ -100,7 +100,7 @@ export default function Portofolio() {
                         className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg cursor-pointer transform transition-transform duration-10 hover:scale-105 border-2 border-yellow-400"
                     >
                         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400">Ecomotive</h2>
-                        <p className="text-gray-600 hidden md:block">React Native</p>
+                        <p className="text-gray-600 hidden md:block">Fleet management mobile app</p>
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@ export default function Portofolio() {
                                     )}
                                     {showDialog === 3 && (
                                         <p className="text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
-                                            Web aplication that allows users to select words from a sentence, add the intent, entities and porperies of the selection.
+                                            Web aplication that allows users to select words from a sentence and add the intent, entities and properties to the selection.
                                         </p>
                                     )}
                                     {showDialog === 4 && (
@@ -189,7 +189,7 @@ export default function Portofolio() {
                                     )}
                                     {showDialog === 6 && (
                                         <p className="text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
-                                            Mobile application .
+                                            Mobile application for fleet monitoring and management.
                                         </p>
                                     )}
                                     <div className="mt-6 md:mt-8">
@@ -233,22 +233,40 @@ export default function Portofolio() {
                                             </>}
                                             {showDialog === 4 && <>
                                                 <li>Team lead position being responsible of client communication, project management and team management.</li>
-                                                <li>Using Animations API I managed to create custom component animations. Ex: Search text input that fades in on search icon press, preview screen slide in on map pin press
-                                                with elixir on backend to create the API consumed by the mobile react-native app.</li>
+                                                <li>Using Animations API I managed to create custom component animations. Ex: Search text input that fades in on search icon press, preview screen slide in on map pin press.</li>
                                                 <li>Used Redux Store to manage the state of the application.</li>
                                                 <li>Used Expo to build the mobile application.</li>
                                                 <li>Used Fastlane to automate the deployment of the mobile application.</li>
                                                 <li>Used Docker to containerize the mobile application.</li>
+                                                <li>Used Elixir to create the API consumed by the mobile react-native app.</li>
+                                                <li>Used Firebase to send notificaions.</li>
+                                                <li>In the same project an admin web page was implemented to manage the restaurants and the offers.</li>
                                             </>}
                                             {showDialog === 5 && <>
-                                                <li>For the mobile application an advanced text editor was needed. To be able to implement the complex text editor we used the WebView component and Vanilla JavaScript.</li>
+                                                <li>For the mobile application an advanced text editor was needed. To be able to implement the complex text editor I used the WebView component and Vanilla JavaScript.</li>
                                                 <li>Used Chaossearch, Splunk and Datadog to monitor the performance of the application and to find the root cause of the issues.</li>
                                                 <li>Used Jenkins to automate the deployment of the services.</li>
+                                                <li>I was reponsible for PEAK performance testing and resources allocation for black friday period in 2024.</li>
                                             </>}
                                             {showDialog === 6 && <>
-                                                <li>Creating multiple hand made component. Being not satisfied with the level of customisation of NPM packages I took matters in my own hands and built from scratch different components, from DatePicker to Charts inside a Webview using D3.js. For the Chart component the main achievement was performance, getting from a chart rendered with SVGs that supported a small amount of data, otherwise it will move slow or crash our app, to a chart that renders big amounts of data, is responsive, works smooth and has a 100% level of customisation. Got out of my comfort zone and, when needed, jumped in figma, and using a template I created an Android icon that was urgently needed for the app release.</li>
+                                                <li>Developed custom components from scratch due to limitations in existing NPM packages, prioritizing enhanced customization and performance. Key achievements include:
+                                                    <ul className="list-[square] list-inside ml-6">
+                                                        <li>Built various components including a custom DatePicker</li>
+                                                        <li>Implemented sophisticated data visualization using D3.js within a WebView</li>
+                                                        <li>Significantly improved chart performance by:
+                                                            <ul className="list-[triangle] list-inside ml-6">
+                                                                <li>Replacing SVG-based rendering with a more efficient solution</li>
+                                                                <li>Enabling smooth handling of large datasets</li>
+                                                                <li>Implementing responsive design</li>
+                                                                <li>Achieving full customization capabilities</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>The chart component transformation was particularly notable, evolving from a limited SVG implementation that struggled with large datasets to a high-performance solution capable of handling substantial data volumes while maintaining smooth interactions</li>
+                                                    </ul>
+                                                </li>
+                                                <br />
+                                                <li>Demonstrated versatility by creating an Android app icon using Figma to meet urgent release requirements</li>
                                                 <li>Used RTK Query to fetch data from the API and manage the state of the application.</li>
-                                                <li>Used Webviews to render the React Native components inside the mobile application.</li>
                                             </>}
                                         </ul>
                                     </div>

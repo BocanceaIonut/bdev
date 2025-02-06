@@ -45,7 +45,7 @@ export default function AboutMe() {
                         </div>
                         <div className="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-95 bg-yellow-400 text-black p-2 sm:p-4 rounded-lg shadow-lg inset-0 flex flex-col justify-center z-10 text-center">
                             <p className="text-xs sm:text-sm">
-                                • <b>Frontend:</b> React, React Native, Expo, Next.js, TypeScript, TailwindCSS, Webviews, Websockets<br />
+                                • <b>Frontend:</b> React, React Native, Expo, TypeScript, Webviews, Websockets<br />
                                 • <b>Backend:</b> Erlang, Elixir<br />
                                 • <b>Others:</b> AWS, Firebase, Docker, Postgres, DinamoDB, Fastlane 
                             </p>
@@ -62,7 +62,7 @@ export default function AboutMe() {
                             <p className="text-xs sm:text-sm">
                                 • Fintech<br />
                                 • Food<br />
-                                • Navigation app<br />
+                                • Navigation<br />
                             </p>
                         </div>
                     </div>
