@@ -3,7 +3,7 @@ export default function ContactMe() {
         <div className="w-screen px-4 md:pr-32 md:pl-8">
             <div className="flex flex-col justify-center items-center w-full h-full">
               <h1 className="text-3xl md:text-4xl mb-6 md:mb-8 text-black font-bold">Contact Me</h1>
-              <div className="bg-white p-4 md:p-8 rounded-lg shadow-lg w-full max-w-2xl border-2 border-yellow-400">
+              <div className="bg-white p-4 md:p-8 rounded-lg shadow-lg w-full max-w-2xl border-2 border-red-500">
                 <div className="space-y-4 md:space-y-6">
                   <div className="flex flex-col md:flex-row items-start md:items-center space-y-2 md:space-y-0 md:space-x-4">
                     <div className="bg-yellow-400 p-3 md:p-4 rounded-full">
