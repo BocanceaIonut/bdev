@@ -6,6 +6,7 @@ import Home from "../components/Home";
 import Resume from "../components/Resume";
 import Portofolio from "../components/Portofolio";
 import ContactMe from "../components/ContactMe";
+import Testimonials from "../components/Testimonials";
 const sectionStyle =
   "min-h-screen w-screen text-white flex flex-col justify-center items-center snap-start bg-white";
 
@@ -21,9 +22,9 @@ export default function BHome() {
     };
 
     checkMobile();
-    window.addEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
 
-    return () => window.removeEventListener('resize', checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const handleScroll = () => {
@@ -77,10 +78,10 @@ export default function BHome() {
         <section id="section3" className={`${sectionStyle}`}>
           <Portofolio />
         </section>
-        {/* <section id="section4" className={`${sectionStyle}`}>
-          <Testimonials />
-        </section> */}
         <section id="section4" className={`${sectionStyle}`}>
+          <Testimonials />
+        </section>
+        <section id="section5" className={`${sectionStyle}`}>
           <ContactMe />
         </section>
       </div>
