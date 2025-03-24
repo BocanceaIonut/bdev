@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - production # or 'main' depending on your default branch
+      - master # or 'main' depending on your default branch
 
 jobs:
   deploy:
