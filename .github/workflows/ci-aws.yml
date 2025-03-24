@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - production # or 'main' depending on your default branch
+      - master # or 'main' depending on your default branch
 
 jobs:
   deploy:
@@ -25,6 +25,12 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Pull Amplify environment
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: amplify pull --appId ${{ secrets.AMPLIFY_APP_ID }} --envName production --yes
 
       - name: Build frontend
         run: npm run build
