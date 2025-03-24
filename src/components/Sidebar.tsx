@@ -5,6 +5,7 @@ import {
   BriefcaseIcon,
   ComputerDesktopIcon,
   PaperAirplaneIcon,
+  MegaphoneIcon,
 } from "@heroicons/react/24/solid";
 
 const linkStyles =
@@ -66,17 +67,17 @@ const Sidebar: React.FC<SidebarProps> = ({
         </a>
 
         {/* Megaphone */}
-        {/* <a
+        <a
           className={`${selectedIndex === 4 ? selectedStyles : deselectedStyles} ${linkStyles}`}
           onClick={() => handleLinkClick("section4", 4)}
         >
           <MegaphoneIcon className="h-8 w-8" />
-        </a> */}
+        </a>
 
         {/* Paper Airplane */}
         <a
-          className={`${selectedIndex === 4 ? selectedStyles : deselectedStyles} ${linkStyles}`}
-          onClick={() => handleLinkClick("section4", 4)}
+          className={`${selectedIndex === 5 ? selectedStyles : deselectedStyles} ${linkStyles}`}
+          onClick={() => handleLinkClick("section5", 5)}
         >
           <PaperAirplaneIcon className="h-8 w-8" />
         </a>
