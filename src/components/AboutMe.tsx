@@ -17,7 +17,7 @@ export default function AboutMe() {
                 <h2 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-yellow-400">
                   Experience
                 </h2>
-                <p className="text-gray-300">7+ years updateeed</p>
+                <p className="text-gray-300">7+ years</p>
               </div>
             </div>
             <div
