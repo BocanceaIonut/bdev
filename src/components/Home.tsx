@@ -1,5 +1,4 @@
 import Image from "next/image";
-import pcc from "../../public/pcc.jpg";
 
 export default function Home() {
   return (
@@ -17,10 +16,12 @@ export default function Home() {
       </div>
       <div className="w-full md:w-1/2 md:h-screen justify-center content-center main-green-background p-4 md:p-0">
         <Image
-          src={pcc}
+          src={"/pcc.jpg"}
           alt="Profile picture"
-          className="w-full h-full object-contain"
-          priority
+          width={800}
+          height={600}
+          unoptimized
+          className="w-full h-auto object-contain"
         />
       </div>
     </div>
