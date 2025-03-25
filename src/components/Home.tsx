@@ -1,8 +1,8 @@
 import Image from "next/image";
-import pcc from "../images/pcc.jpg";
+import pcc from "../../public/pcc.jpg";
 
 export default function Home() {
-    return (
+  return (
     <div className="flex flex-col md:flex-row h-full w-full">
       <div className="bg-white w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center items-center md:items-start">
         <h1 className="text-2xl md:text-4xl mb-4 md:mb-6 main-green-text text-center md:text-left">
@@ -16,13 +16,13 @@ export default function Home() {
         </h1>
       </div>
       <div className="w-full md:w-1/2 md:h-screen justify-center content-center main-green-background p-4 md:p-0">
-        <Image 
-          src={pcc} 
+        <Image
+          src={pcc}
           alt="Profile picture"
           className="w-full h-full object-contain"
           priority
         />
       </div>
     </div>
-    )
+  );
 }
