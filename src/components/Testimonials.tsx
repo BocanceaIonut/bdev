@@ -13,8 +13,8 @@ export default function Testimonials() {
                 <p className="text-gray-600 italic">
                   &quot;Sometimes as a product owner we would get a little over
                   our heads with ideas and wants for the app we were building.
-                  Ionut was able to understand that and help us turn these ideas
-                  into fully functional features that met and exceeded our
+                  Gabriel was able to understand that and help us turn these
+                  ideas into fully functional features that met and exceeded our
                   product goals. With his help we very quickly pivoted a basic
                   feature into a more fleshed out feature to meet a business
                   goal, and that helped us win a pivotal contract. It quickly
